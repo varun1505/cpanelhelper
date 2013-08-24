@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="scripts/codemirror.css">
+    <script src="scripts/codemirror.js"></script>
+    <script src="scripts/matchbrackets.js"></script>
+    <script src="scripts/htmlmixed.js"></script>
+    <script src="scripts/xml.js"></script>
+    <script src="scripts/javascript.js"></script>
+    <script src="scripts/css.js"></script>
+    <script src="scripts/clike.js"></script>
+    <script src="scripts/php.js"></script>
+    <style type="text/css">.CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}</style>
+    <link rel="stylesheet" href="../../doc/docs.css">
+</head>
+<body>
+<form><textarea id="code" name="code">
+    <?php
+function hello($who) {
+	return "Hello " . $who;
+}
+?>
+    <p>The program says <?= hello("World") ?>.</p>
+    <script>
+        alert("And here is some JS code"); // also colored
+    </script>
+</textarea></form>
+
+<script>
+    var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        lineNumbers: true,
+        matchBrackets: true,
+        mode: "application/x-httpd-php",
+        indentUnit: 4,
+        indentWithTabs: true,
+        enterMode: "keep",
+        tabMode: "shift"
+    });
+</script>
+</body>
+</html>

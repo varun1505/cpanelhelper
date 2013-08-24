@@ -1,0 +1,5 @@
+$(document).ready(function(){
+	$('#desc a').live('click',function(){
+		alert('aasdf');
+	});
+});

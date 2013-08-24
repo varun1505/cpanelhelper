@@ -1,0 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+.CodeMirror {
+    border: 1px solid #eee;
+    height: 760px;
+    overflow: scroll;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+}
+}
+.CodeMirror-scroll {
+    height: auto;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
