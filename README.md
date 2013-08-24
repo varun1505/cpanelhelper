@@ -4,7 +4,7 @@ The extension does the following:
 <ol>
 	<li>Allows use of the "TAB" key for intending code.</li>
 	<li>Highlights code for many programing languages.</li>
-	<li>Use Ctrl + S to sae files.</li>
+	<li>Use Ctrl + S to save files.</li>
 	<li>More features coming soon..</li>
 </ol>
 Extension By: <br/>
